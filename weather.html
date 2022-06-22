@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Gentium Plus', serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Work Sans', sans-serif;
+
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-style: initial;
+            background: linear-gradient(rgb(110, 236, 236),rgb(38, 128, 128));
+            flex-direction: column;
+            height: 100vh;
+        }
+        .temprature,.location{
+            height: 30vh;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around ;
+        }
+        .temprature{
+            flex-direction: column;
+        }
+       
+        .degree-scetion{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .degree-scetion span{
+            margin: 10px;
+            font-size: 30px;
+        }
+        .degree-scetion h2{
+            font-size: 40px;
+        }
+
+
+        * {
+  margin: 0;
+  padding: 0;
+ }
+
+.element {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+ }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #57c1eb 0%,#246fa8 100%);
+ }
+
+ .elements {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   
+ }
+
+.white {fill:#FFFFFF}
+.gray {fill:#E0E0E0}
+.yellow {fill:#FFEB3B}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Heebo&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="location">
+        <h1 class="timezone">TimeZone</h1>
+        <div class="icon"> </div>
+    </div>
+    <div class="temprature">
+        <div class="degree-scetion">
+        <h2 class="degree">120</h2>
+        <span>C</span>
+        </div>
+        <div class="decription"> cold </div>
+    </div>
+    <script src="/weather.js"></script>
+</body>
+</html>
